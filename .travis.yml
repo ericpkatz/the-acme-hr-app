@@ -3,3 +3,5 @@ node_js:
   - lts/*
 services:
   - postgresql
+before_script:
+  - psql -c 'create database acme_hr_db;' -U postgres
